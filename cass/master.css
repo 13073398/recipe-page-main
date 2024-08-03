@@ -1,0 +1,192 @@
+:root{
+    --main_padding:15px
+}
+
+body{
+    background-color:  hsl(30, 54%, 90%);
+}
+
+article{
+    margin: 20px auto;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    width: 650px;
+    padding: var(--main_padding);
+    border-radius: 7px;
+}
+@media(max-width:320px){
+    article{
+        width: 230px;
+    }
+}
+@media(min-width:321px) and (max-width:767px) {
+    article{
+        width: 290px;
+    }
+}
+@media(min-width:768px) and (max-width:991px) {
+    article{
+        width: 640px;
+    }
+}
+
+
+ .image  img{
+    width:90%;
+    border-radius: 7px;
+ }
+ article .title h2{
+    text-align: left;
+
+ }
+ article .title p{
+    text-align: left;
+    font-size: 16px;
+    color: gray;
+   text-wrap: wrap;
+
+ }
+  article .prepration{
+   
+   text-align: left;
+   background-color:hsl(330, 100%, 98%);
+   padding: var(--main_padding);
+   border-radius: 7px;
+
+  
+ }
+
+ article .prepration h3{
+    color: hsl(332, 51%, 32%);
+ }
+
+ article .prepration ul li{
+    margin-top: 10px;
+    padding-left: 15px;
+  text-wrap: nowrap;
+  margin-left: -20px;
+ }
+ @media(max-width:320px){
+    article .prepration ul li{
+        margin-left: -35px;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+ }
+ article .ingredients{
+    text-align: left;
+    position: relative;
+ }
+ article .ingredients h4{
+    color: hsl(332, 51%, 32%);
+    font-size: 30px;
+    font-weight:bold;
+   
+ }
+ article .ingredients::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #666;
+    width: 95%;
+    height: 5px;
+    bottom: -20px;
+ }
+ article .ingredients ul{
+    margin-top: -20px;
+ }
+ article .ingredients ul li{
+    margin-top: 10px;
+    padding-left: 15px;
+ }
+ @media(max-width:767px){
+   article .ingredients ul li{
+      margin-left: -20px;
+   }
+ }
+ @media(max-width:320px){
+    article .ingredients ul li{
+        padding-left: 1px;
+    }
+ }
+ article .instruction{
+    text-align: left;
+    position: relative;
+ }
+ article .instruction::after{
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #666;
+    width: 95%;
+    height: 5px;
+    bottom: -12px;
+ }
+ article .instruction h4{
+    color: hsl(332, 51%, 32%);
+    font-size: 30px;
+    font-weight:bold;
+ }
+ article .instruction ul {
+    margin-top: -20px;
+ }
+ article .instruction ul li{
+    list-style-type: decimal;
+    margin-top: 10px;
+    padding-left: 10px;
+ }
+ @media(max-width:767px){
+   article .instruction ul li{
+      margin-left: -20px;
+   }
+ }
+ article .instruction ul li span{
+    font-weight: bold;
+ }
+ article .nutrition{
+    text-align: left;
+ }
+ article .nutrition h4{
+    color: hsl(332, 51%, 32%);
+    font-size: 30px;
+    font-weight:bold;
+ }
+ article .nutrition h5{
+    margin-top: -20px;
+ }
+ article .nutrition .content{
+    display: flex;
+    flex-direction: column;
+  
+    margin-top: 50px;
+ }
+ article .nutrition .content .row{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+   
+ }
+ article .nutrition .content .row{
+   position: relative;
+   margin-bottom: 20px;
+ }
+ article .nutrition .content .row::after{
+   content: "";
+   position: absolute;
+   border-bottom: 1px solid  black;
+   width: 95%;
+   height: 1%;
+ 
+ }
+ article .nutrition .content .row h5:first-child{
+   margin-left: 30px;
+ }
+ article .nutrition .content .row h5:last-child{
+   margin-right: 320px;
+   color:  hsl(332, 51%, 32%);
+   text-align: center;
+ } 
+ @media(max-width:767px){
+   article .nutrition .content .row h5:last-child{
+      margin-right: 100px;
+    } 
+ }
